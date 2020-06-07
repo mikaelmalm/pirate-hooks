@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Black sea",
+    "id": "black-sea",
+    "image": "black-sea.png",
+    "description": "The Black Sea is a body of water and marginal sea of the Atlantic Ocean between Eastern Europe, the Caucasus, and Western Asia. It is supplied by a number of major rivers, such as the Danube, Dnieper, Southern Bug, Dniester, Don, and the Rioni. The watersheds of many countries drain into the Black Sea beyond the six that immediately border it. There is bound to be treassure in those waters!"
+  },
+  {
+    "title": "Red sea",
+    "id": "red-sea",
+    "image": "red-sea.jpg",
+    "description": "The Red Sea (Arabic: البحر الأحمر Al Baḥr al aḥmar‎, Hebrew: Yam Soof ים סוף) is a seawater inlet of the Indian Ocean, lying between Africa and Arabia. There is rumors that the prince of thieves has hidden alot of gems in the sea, and it is up for grabs! The connection to the ocean is in the south through the Bab el Mandeb strait and the Gulf of Aden. To the north lie the Sinai Peninsula, the Gulf of Aqaba, and the Gulf of Suez (leading to the Suez Canal). The Red Sea is a Global 200 ecoregion. The sea is underlain by the Red Sea Rift which is part of the Great Rift Valley."
+  },
+  {
+    "title": "Dead sea",
+    "id": "dead-sea",
+    "image": "dead-sea.jpg",
+    "description": "The Dead Sea (Hebrew: יָם הַמֶּלַח) Yam ha-Melah lit. Sea of Salt; Arabic: البحر الميت‎ Al-Bahr al-Mayyit or Buhayrat Bahret or Birket Lut, lit. 'Lake/Sea of Lot' is a salt lake bordered by Jordan to the east and Israel and the West Bank to the west. It lies in the Jordan Rift Valley, and its main tributary is the Jordan River. It is know by the name 'The Dead Sea' by the number of pirates who have died looking for its riches. Don't be scared, the sharks can smell that, and they love some coward pirate meat."
+  }
+]

@@ -1,0 +1,13 @@
+@import "../../styles/index";
+
+.Title {
+  @include title();
+  font-size: 6vw;
+  text-shadow: 0.5vmin 0.5vmin 0vmin rgba($color: #000000, $alpha: 0.5);
+}
+
+.SubTitle {
+  @include title();
+  font-size: 7vw;
+  text-shadow: 0.5vmin 0.5vmin 0vmin rgba($color: #000000, $alpha: 0.5);
+}

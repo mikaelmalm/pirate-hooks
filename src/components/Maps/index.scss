@@ -1,0 +1,47 @@
+@import "../../styles/index";
+
+.MapsSection {
+  padding-top: 15vh;
+  max-width: 60vw;
+  color: #fff;
+
+  h3 {
+    @include title();
+    font-size: 2vw;
+    padding-bottom: 1.5vh;
+    text-shadow: 2px 2px 0vmin #000;
+  }
+
+  h4 {
+    @include title();
+    font-size: 2vw;
+    text-shadow: 2px 2px 0vmin #000;
+  }
+
+  .Maps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Map {
+    width: 15vw;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.1s ease;
+
+    &:hover,
+    &:focus {
+      transform: scale(0.95);
+    }
+
+    &:focus {
+      // NOTE: We could remove the outline for a cleaner design, but it would decrease accesability!
+      outline: solid rgba($color: #000000, $alpha: 0.4);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
