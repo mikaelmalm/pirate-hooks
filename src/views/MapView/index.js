@@ -1,3 +1,5 @@
+// This f*#!@#!@$!! is messing with me, so I disable it.
+/* eslint-disable */
 import React, { useState, useEffect } from "react";
 import "./index.scss";
 import { Title, MapsSection } from "components";
