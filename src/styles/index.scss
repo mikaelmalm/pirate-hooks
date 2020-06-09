@@ -1,4 +1,22 @@
+@font-face {
+  font-family: "BlackPearl";
+  src: url("../fonts/BlackPearl.svg#BlackPearl") format("svg"),
+    url("../fonts/BlackPearl.ttf") format("truetype"),
+    url("../fonts/BlackPearl.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blackpearl";
+  src: url("../fonts/Blackpearl.eot");
+  src: url("../fonts/Blackpearl.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Blackpearl.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @mixin title {
   color: #fff;
-  font-family: "BlackPearl";
+  font-family: "BlackPearl", cursive;
 }
