@@ -6,6 +6,11 @@
   padding: 3vw 5vw;
   position: relative;
   overflow: hidden;
+
+  @media screen and (max-width: 720px) {
+    padding: 10% 30px 15px;
+    text-align: center;
+  }
 }
 
 .Island {

@@ -1,3 +1,5 @@
+@import "../../styles/index";
+
 .MapView {
   background-image: url("../../assets/paper.jpg");
   background-size: cover;
@@ -7,25 +9,47 @@
   position: relative;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media screen and (max-width: 720px) {
+    padding: 15px;
+  }
 
   p {
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
-    font-size: 1vw;
+    font-size: 1.8rem;
     line-height: 1.6;
     text-shadow: 0.1vw 0.1vw 0.1vw #000;
 
     margin-top: 3vmin;
   }
 
+  .map-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media screen and (max-width: 720px) {
+      flex-direction: column-reverse;
+    }
+  }
+
   .MapsSection {
     max-width: 40vw;
+
+    @media screen and (max-width: 720px) {
+      max-width: 100vw;
+    }
   }
 
   .content {
     flex: 2;
     padding-right: 10vw;
+
+    @media screen and (max-width: 720px) {
+      padding: 0;
+    }
   }
 
   .sea-image {
@@ -38,6 +62,32 @@
       max-height: 80vmin;
       opacity: 0.8;
       border: 1vmin dashed rgba($color: #000000, $alpha: 0.5);
+    }
+
+    @media screen and (max-width: 720px) {
+      padding-bottom: 30px;
+    }
+  }
+}
+
+.Nav {
+  width: 100%;
+  margin-bottom: 10vmin;
+
+  a {
+    @include title();
+    text-decoration: none;
+    font-size: 1.5vw;
+    text-shadow: 0.1vw 0.1vw 0.1vw #000;
+    opacity: 0.7;
+    transition: opacity 0.25s;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    @media screen and (max-width: 720px) {
+      font-size: 18px;
     }
   }
 }
