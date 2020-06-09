@@ -22,6 +22,8 @@ const MapView = () => {
     setRelatedMaps(treassureMaps.filter((map) => map.id !== id));
   }, [id]);
 
+  if (Object.keys(treassureMap).length < 1) return null;
+
   return (
     <div className="MapView">
       <Nav />
