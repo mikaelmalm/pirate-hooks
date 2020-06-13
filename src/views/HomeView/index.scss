@@ -7,6 +7,16 @@
   position: relative;
   overflow: hidden;
 
+  .hiddenButton {
+    position: absolute;
+    right: 17vmin;
+    bottom: 6vmin;
+    height: 5vmin;
+    width: 5vmin;
+    background: transparent;
+    border: none;
+  }
+
   @media screen and (max-width: 720px) {
     padding: 10% 30px 15px;
     text-align: center;

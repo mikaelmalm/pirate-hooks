@@ -7,6 +7,7 @@ import { Title, SubTitle, MapsSection } from "components";
 
 // assets
 import PalmImage from "assets/palm.svg";
+import { useHistory } from "react-router-dom";
 
 const Island = () => (
   <div className="Island">
@@ -16,6 +17,13 @@ const Island = () => (
 );
 
 const HomeView = () => {
+  const history = useHistory();
+
+  // this code is secure, trust me, i know codes
+  const navigateToSecret = () => {
+    history.push("/log");
+  };
+
   return (
     <div className="HomeView">
       <div>
@@ -26,6 +34,8 @@ const HomeView = () => {
       <MapsSection maps={treassureMaps} headline="Maps" />
 
       <Island />
+
+      <button className="hiddenButton" onClick={navigateToSecret} />
     </div>
   );
 };
