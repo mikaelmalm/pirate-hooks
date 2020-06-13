@@ -1,16 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./index.scss";
-import { Title, MapsSection } from "components";
-import { Link, useParams } from "react-router-dom";
+import { Title, MapsSection, Nav } from "components";
+import { useParams } from "react-router-dom";
 
-// ignore this :sweat_smile:
+// Very cool import of data :sweat_smile:
 import treassureMaps from "data.json";
-
-const Nav = () => (
-  <div className="Nav">
-    <Link to="/"> {"<= Back to land seacrabs"}</Link>
-  </div>
-);
 
 const MapView = () => {
   const [treassureMap, setTreassureMap] = useState({});
@@ -18,6 +12,7 @@ const MapView = () => {
   const { id } = useParams();
 
   useEffect(() => {
+    // Set data in state
     setTreassureMap(treassureMaps.find((map) => map.id === id));
     setRelatedMaps(treassureMaps.filter((map) => map.id !== id));
   }, [id]);
@@ -36,7 +31,10 @@ const MapView = () => {
           <MapsSection maps={relatedMaps} headline="Related maps" />
         </div>
         <div className="sea-image">
-          <img src={`/${treassureMap.image}`} alt="Image for map" />
+          <img
+            src={`/${treassureMap.image}`}
+            alt="Map of the sea where the treassure is located"
+          />
         </div>
       </div>
     </div>

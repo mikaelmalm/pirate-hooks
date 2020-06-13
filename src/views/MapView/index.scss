@@ -15,16 +15,6 @@
     padding: 15px;
   }
 
-  p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    font-size: 1.8rem;
-    line-height: 1.6;
-    text-shadow: 0.1vw 0.1vw 0.1vw #000;
-
-    margin-top: 3vmin;
-  }
-
   .map-content {
     display: flex;
     flex-direction: row;
@@ -66,28 +56,6 @@
 
     @media screen and (max-width: 720px) {
       padding-bottom: 30px;
-    }
-  }
-}
-
-.Nav {
-  width: 100%;
-  margin-bottom: 10vmin;
-
-  a {
-    @include title();
-    text-decoration: none;
-    font-size: 1.5vw;
-    text-shadow: 0.1vw 0.1vw 0.1vw #000;
-    opacity: 0.7;
-    transition: opacity 0.25s;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    @media screen and (max-width: 720px) {
-      font-size: 18px;
     }
   }
 }
