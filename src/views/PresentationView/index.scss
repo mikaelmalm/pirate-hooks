@@ -1,0 +1,40 @@
+@import "../../styles/index";
+
+.PresentationView {
+  width: 100%;
+  background-image: url("../../assets/paper.jpg");
+  background-size: cover;
+  background-color: #8f5822;
+
+  text-align: center;
+
+  padding: 15vmin 5vmin;
+
+  h3 {
+    margin-top: 3vmin;
+    @include title();
+    text-shadow: 2px 2px 0vmin #000;
+    font-size: 24px;
+
+    @media (max-width: 720px) {
+      font-size: 14px;
+    }
+  }
+
+  ul {
+    margin-top: 3vmin;
+    @include title();
+    text-shadow: 2px 2px 0vmin #000;
+    font-size: 35px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+
+    @media (max-width: 720px) {
+      font-size: 18px;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
+  }
+}
