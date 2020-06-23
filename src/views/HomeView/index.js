@@ -19,7 +19,7 @@ const Island = () => (
 const HomeView = () => {
   const history = useHistory();
 
-  // this code is secure, trust me, i know codes
+  // this code is secure, trust me, I know codes
   const navigateToSecret = () => {
     history.push("/log");
   };
