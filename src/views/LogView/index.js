@@ -11,10 +11,6 @@ const LogView = () => {
     };
 
     document.addEventListener("scroll", scrollWarning);
-
-    return () => {
-      document.removeEventListener("scroll", scrollWarning);
-    };
   }, []);
 
   return (
